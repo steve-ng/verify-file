@@ -18,7 +18,6 @@ export function getOrInitializeWeb3(web3) {
   }
 
   const { hashContractAddress = '' } = config;
-  console.log('config', config);
   /* eslint-disable */
 
   hashContract = new myWeb3.eth.Contract([

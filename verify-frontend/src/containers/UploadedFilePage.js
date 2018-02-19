@@ -24,7 +24,7 @@ class UploadedFilePage extends React.Component {
   render() {
     const { uploadState = {} } = this.props;
     const { uploadedFilesState = {} } = uploadState;
-    const { files = [] } = {};
+    const { files = [] } = uploadedFilesState;
 
     return (
       <div className="flex flex-center flex-wrap">
@@ -52,7 +52,7 @@ class UploadedFilePage extends React.Component {
           </Table>
         </Paper>
 
-        {files.length == 0 && (
+        {files.length === 0 && (
           <div className="flex flex-center flex-wrap pt-10">
             You have not uploaded any file hash yet. Go&nbsp;
             <Link to="/upload">here</Link> &nbsp;to upload.

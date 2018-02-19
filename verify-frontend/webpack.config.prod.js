@@ -6,7 +6,7 @@ import WebpackMd5Hash from 'webpack-md5-hash';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import autoprefixer from 'autoprefixer';
-import props from './properties/prodd.json';
+import props from './properties/prod.json';
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production'),
